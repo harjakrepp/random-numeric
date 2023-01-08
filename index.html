@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="make a random numeric generator with this">
+	<meta name="author" content="Harjakrepp">
+	<meta name="keywords" content="otp generator, random numeric generator">
+	<title>Random Numeric Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h3>Random Numeric Generator</h3>
+		</div>
+		<div class="main">
+			<div class="choose-num-box">
+				<h3>Numeric Amount</h3>
+				<div class="num-counter">
+					<button id="min">-</button>
+					<div class="parentNum">
+						<p id="num">1</p>
+					</div>
+					<button id="plus">+</button>
+				</div>
+				<button id="choose-num">Choose</button>
+			</div>
+			<div class="generate-num-box">
+				<h3>Choosed Amount</h3>
+				<div class="parentCnum">
+					<h4 id="choosed-num">1</h4>
+				</div>
+				<button onclick="generateNumber()">Generate</button>
+			</div>
+			<div class="result-num-box">
+				<h3>Result</h3>
+				<textarea id="num-result" placeholder="here is your random number..." readonly></textarea>
+				<p id="copy" onclick="copyText()">Copy</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
